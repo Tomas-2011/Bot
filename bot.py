@@ -61,8 +61,6 @@ async def on_message(message):
         resultado = random.randint(1, caras)
         await message.channel.send(f"🎲 El dado de {caras} caras cayó en: **{resultado}**")
 
-    else:
-        await message.channel.send(message.content)
 
 
 client.run("TOKEN_AQUI")
